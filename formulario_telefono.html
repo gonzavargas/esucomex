@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario</title>
+<link href="css/formulario_fono.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+<script type="text/javascript" src="js/funciones.js"></script>
+
+<script type="text/javascript">
+
+	function validar()
+	{
+		var nombre = document.getElementById('nombre');
+		var mail = document.getElementById('mail');
+		var telefono = document.getElementById('telefono');
+		
+		if(trim(nombre.value) == '')
+		{
+			alert('Por favor ingresa tu nombre');
+			nombre.value = '';
+			nombre.focus();
+		}
+		else if(trim(mail.value) == '')
+		{
+			alert('Por favor ingresa tu mail');
+			mail.value = '';
+			mail.focus();
+		}
+		else if(validarEmail(mail.value) == false)
+		{
+			alert('Por favor ingresa un mail válido');
+			mail.focus();
+		}
+		else if(trim(telefono.value) == '')
+		{
+			alert('Por favor ingresa tu teléfono');
+			telefono.value = '';
+			telefono.focus();
+		}
+		else
+		{
+			document.getElementById('llamado').submit();
+		}
+	}
+
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() 
+		{
+        	$("#tipofon").change(function(){
+				$("#cod_cel").toggle();
+				$("#cod_fijo").toggle();
+			}
+			);
+    	}
+		);
+</script>
+
+</head>
+
+<body>
+<div id="wrapp_formulario">
+<div id="formulario_header"><h1>Ingresa tu tel&eacute;fono y te llamamos en 20 minutos</h1></div>
+<div id="formulario_content">
+<form id="llamado" name="llamado" method="post" action="enviar_telefono.php" onsubmit="return false;">
+	<table border="0" cellspacing="0" cellpadding="0">
+  		<tr>
+    		<td>Nombre:</td>
+    		<td><input id="nombre" name="nombre" type="text" autocomplete="off" /></td>
+  		</tr>
+  		<tr>
+    		<td>Email:</td>
+    		<td><input id="mail" name="mail" type="text" autocomplete="off" /></td>
+  		</tr>
+  		<tr>
+    		<td>
+            	<select id="tipofon" name="tipofon">
+                	<option value="celular">Celular</option>
+                    <option value="fijo">Fijo</option>
+                </select>
+            
+            	<select id="cod_cel" name="cod_cel">
+                    <option value="9">9</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                </select>
+                
+                <select id="cod_fijo" name="cod_fijo" style="display:none;">
+                    <option value="0">Código</option>
+                    <option value="2">2</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="39">39</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="45">45</option>
+                    <option value="51">51</option>
+                    <option value="52">52</option>
+                    <option value="53">53</option>
+                    <option value="55">55</option>
+                    <option value="57">57</option>
+                    <option value="58">58</option>
+                    <option value="61">61</option>
+                    <option value="63">63</option>
+                    <option value="64">64</option>
+                    <option value="65">65</option>
+                    <option value="67">67</option>
+                    <option value="71">71</option>
+                    <option value="72">72</option>
+                    <option value="73">73</option>
+                    <option value="75">75</option>
+    			</select>
+            </td>
+    		<td>
+                
+                <input id="telefono" name="telefono" type="text" autocomplete="off" />
+                
+            </td>
+  		</tr>
+        <tr>
+    		<td></td>
+    		<td>
+    			<a href="javascript:void(0);" id="enviar" onclick="validar();">
+    				<div class="btn_enviar"></div>
+    			</a>
+    		</td>
+  		</tr>
+	</table>
+</form>
+</div><!--/formulario_content-->
+</div><!--/wrapp_formulario-->
+</body>
+</html>

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #fff;
+	margin: 12px 0 0 40px;
+	float: left;
+}
+
+#wrapp_formulario {
+	width: 400px;
+	height: 300px;
+	margin: 0 auto;
+	background: #f7f7f7;
+	border: 1px solid #959595;
+}
+
+#formulario_header {
+	width: 400px;
+	height: 40px;
+	background: rgb(166, 17, 3) url(../img/icon_iphone_contacto.png) no-repeat 10px 9px;
+}
+
+#formulario_content {
+	margin: 10px;
+}
+
+.btn_enviar {
+	width: 94px;
+	height: 25px;
+	margin: 10px auto 10px auto;
+	background: url(../img/enviar_button.png) no-repeat;
+}

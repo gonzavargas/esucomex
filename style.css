@@ -1,0 +1,1041 @@
+@import url("sheet.css");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600);
+
+/*
+Theme Name: esucomex
+Theme URI:
+Author: Gonzalo Vargas
+Author URI:
+Description: Tema para web de transición Instituto Profesional Esucomex.
+Version: 1.0
+License: Público
+License URI:
+Tags:
+Text Domain: esucomex
+*/
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Estilos ESUCOMEX
+   ========================================================================== */
+
+/* ESTILOS DE TEXTO */
+
+#contenido p {
+	font-size: 12px;
+	text-align: justify;
+	color: #666;
+}
+
+h1.carreras {
+	color: rgb(102, 10, 15);
+	font-size: 18px;
+	font-weight: normal;
+	margin: 5px 0 0 10px;
+}
+
+h1.contacto {
+	font-size: 14px;
+	font-weight: normal;
+	color: #fff;
+	margin: 12px 0 0 40px;
+	float: left;
+}
+
+h1.contenido {
+	width: 100%;
+	display: block;
+	color: #fff;
+	background: rgb(3, 127, 140);
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+	font-size: 18px;
+}
+
+h1.pagina_carrera {
+	width: 400px;
+	height: auto;
+	float: left;
+	overflow: hidden;
+	display: block;
+	margin: 70px 0 0 20px;
+	font-size: 24px;
+	font-weight: normal;
+	color: rgb(166, 14, 20);
+}
+
+.epigrafe {
+	font-size: 10px;
+	text-align: left;
+	margin: 0;
+	color: #898989;
+}
+
+/* ESTILOS HEADER */
+
+#header_wrapp {
+	width: 100%;
+	height: 120px;
+}
+
+#franja_tec {
+	width: 900px;
+	height: 20px;
+	background: #ebebeb;
+}
+
+#cabecera {
+	width: 900px;
+	height: 120px;
+	margin: 0 auto;
+}
+
+#header_img {
+	width: 900px;
+	height: 100px;
+	background: url(img/header.jpg) no-repeat;
+}
+
+a.inicio {
+	display: block;
+	width: 260px;
+	height: 65px;
+	float: left;
+	margin: 30px 0px 0px 0px;
+}
+
+#nav_wrapp {
+	width: 100%;
+	height: 28px;
+}
+
+nav {
+	width: 900px;
+	height: 26px;
+	margin: 0 auto;
+	border-top: 3px solid rgb(166, 14, 20);
+	border-bottom: 1px solid rgb(166, 14, 20);
+}
+
+nav ul {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	display: block;
+	position: relative;
+	float: left;
+}
+
+nav li ul { display: none; }
+
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	color: rgb(102, 10, 15);
+	padding: 4px 15px 4px 15px;
+}
+
+nav ul li a:hover {
+	background: rgb(166, 17, 3);
+	color: #fff;
+}
+
+nav li:hover ul {
+	display: block;
+	position: absolute;
+	z-index: 10;
+}
+nav li:hover li {
+	float: none;
+	font-size: 11px;
+	border-top: 1px solid rgb(134, 3, 3);
+}
+
+nav li:hover a {
+	background: rgb(166, 17, 3);
+	color: #fff;
+}
+
+nav li:hover li a:hover {
+	background: rgb(89, 2, 2);
+	color: rgb(242, 31, 12);
+}
+
+/* ESTILOS CONTENIDO */
+
+#contenido {
+	width: 900px;
+	height: auto;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+}
+
+#contenedor_llamado {
+	width: 210px;
+	height: 250px;
+	float: right;
+	margin-top: 10px;
+}
+
+#caja_llamado {
+	width: 210px;
+	height: 165px;
+	float: right;
+	margin-top: 20px;
+	background: url(img/banner_llamado.png) no-repeat;
+}
+
+a.tomaramos {
+	display: block;
+	width: 210px;
+	height: 65px;
+	float: right;
+	background: url(img/btn_tomaramos.png) no-repeat;
+}
+
+#carreras_tecnicas {
+	width: 440px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#carreras_profesionales {
+	width: 210px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	margin: 0 0 20px 20px;
+}
+
+.header_carreras {
+	width: 100%;
+	height: 36px;
+	border-top: 3px solid rgb(166, 14, 20);
+	border-bottom: 1px solid rgb(166, 14, 20);
+}
+
+.col_carreras {
+	width: 210px;
+	height: auto;
+	margin-right: 20px;
+	float: left;
+	border: none;
+}
+
+.col_carreras_r {
+	width: 210px;
+	height: auto;
+	float: right;
+	border: none;
+}
+
+ul.carreras {
+	margin-top: 10px;
+}
+
+ul.carreras li {
+	font-size: 12px;
+	list-style-type: none;
+}
+
+ul.carreras li a {
+	color: #555;
+	text-decoration: none;
+	display: block;
+	width: 195px;
+	height: 35px;
+	padding: 5px 5px 0 10px;
+	background: #f7f7f7;
+	margin-top: 5px;
+	border-bottom: 1px solid #CCC;
+}
+
+ul.carreras li a:hover {
+	background: #d7d7d7;
+}
+
+.main_content_col {
+	width: 670px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.main_content_col h2 {
+	color: rgb(166, 17, 3);
+}
+
+.main_content_col h3 {
+	color: rgb(166, 17, 3);
+}
+
+.main_content_col ul {
+	font-size: 12px;
+	color: #666;
+	list-style-type: disc;
+}
+
+.main_content_col ul li {
+	margin-top: 5px;
+}
+
+.main_content_col ul li a {
+	color: #01a0b1;
+	text-decoration: none;
+	border-bottom: 1px dotted #01a0b1;
+}
+
+.main_content_col a {
+	color: #01a0b1;
+	text-decoration: none;
+	border-bottom: 1px dotted #01a0b1;
+}
+
+.main_content_col ol {
+	font-size: 12px;
+	color: #666;
+}
+
+.main_content_col ol li {
+	margin-top: 5px;
+}
+
+.main_content_col ol li a {
+	color: #01a0b1;
+	text-decoration: none;
+	border-bottom: 1px dotted #01a0b1;
+}
+
+.main_content_col img.alignleft {
+	float: left;
+	padding: 20px 20px 20px 0;
+}
+
+/* ESTILOS EASY TABLE */
+
+.easy-table {
+	margin-bottom: 30px;
+	border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.easy-table th {
+	padding: 5px;
+	font-size: 14px;
+	background: rgb(166, 17, 3);
+	color: #fff;
+	text-align: left;
+}
+
+.easy-table td {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.gris {
+		background-color: rgb(245, 245, 245);
+		color: #555;
+}
+	
+.crema {
+		background-color: #fff;
+		color: #555;
+}
+
+/* ESTILOS TEMPLATE CARRERAS */
+
+#header_pag_carrera {
+	width: 670px;
+	height: 200px;
+	background: #ebebeb;
+	margin-bottom: 20px;
+}
+
+img.wp-post-image {
+	float: right;
+}
+
+#col_txt_carreras {
+	width: 440px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+}
+
+#col_txt_carreras h2 {
+	font-size: 18px;
+	color: rgb(166, 14, 20);
+	margin: 20px 0 5px 0;
+}
+
+#col_ficha_carreras {
+	width: 210px;
+	height: auto;
+	overflow: hidden;
+	margin-left: 20px;
+	float: right;
+}
+
+table.ficha {
+	width: 100%;
+	margin-top: 15px;
+	font-size: 12px;
+}
+
+table.ficha td {
+	border-bottom: 1px dotted #000;
+	padding: 5px;
+}
+
+table.ficha td.encabezado_ficha {
+	background: #666;
+	color: #fff;
+	border: none;
+}
+
+a.descargar_malla {
+	display: block;
+	width: 200px;
+	height: auto;
+	overflow: hidden;
+	margin-top: 10px;
+	padding: 5px 5px 5px 30px;
+	background: #ebebeb url(img/pdf-file.png) no-repeat 5px;
+	color: #636363;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+	width: 210px;
+	height: auto;
+	overflow: hidden;
+	float: right;
+	margin-bottom: 20px;
+}
+
+.sidebar ul {
+	list-style-type: none;
+	display: block;
+	padding: 10px;
+	background: #ebebeb;
+}
+
+.sidebar ul li {
+	font-size: 12px;
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid #666;
+}
+
+.sidebar ul li a {
+	text-decoration: none;
+	color: #666;
+}
+
+.sidebar ul li a:hover {
+	color: #01a0b1;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+#contacto_email {
+	width: 210px;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 20px;
+	float: left;
+	background: #ebebeb;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+#contacto_email_header {
+	width: 210px;
+	height: 40px;
+	background: rgb(166, 17, 3) url(img/icon_email_contacto.png) no-repeat 10px 9px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.btn_enviar {
+	width: 94px;
+	height: 25px;
+	margin: 10px auto 10px auto;
+	background: url(img/enviar_button.png) no-repeat;
+}
+
+#mensaje {
+	width: 180px;
+	margin: 0 auto;
+}
+
+.campo_texto {
+	width: 180px;
+	height: 25px;
+	padding-left: 5px;
+	border: none;
+	border-radius: 3px;
+}
+
+.titulo_campo {
+	padding-top: 10px;
+}
+
+/* ESTILOS FRANJA NOTICIAS */
+
+#noticias_wrapp {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: #f7f7f7;
+	padding: 20px 0;
+}
+
+#franja_noticias {
+	width: 900px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#noticias {
+	width: 670px;
+	height: auto;
+}
+
+#noticias_footer {
+	width: 670px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	clear: both;
+	margin-top: 20px;
+	border-top: 1px solid #acacac;
+	border-bottom: 1px solid #acacac;
+	text-align: right;
+	font-size: 12px;
+}
+
+#noticias_footer a {
+	text-decoration: none;
+	color: #acacac;
+}
+
+a.rss {
+	width: 24px;
+	height: 24px;
+	float: right;
+	margin-top: 7px;
+	background: url(img/icon_rss.png) no-repeat;
+}
+
+.noticia_box {
+	width: 190px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	margin: 20px 20px 0 0;
+	padding: 10px;
+	font-size: 12px;
+	background: #fff;
+}
+
+.noticia_box:last-child {
+	margin-right: 0;
+}
+
+.noticia {
+	width: 190px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.noticia h2 {
+	font-size: 14px;
+	margin: 0px;
+}
+
+.noticia p {
+	color: #555555;
+	text-align: justify;
+}
+
+.noticia a {
+	text-decoration: none;
+	color: #000;
+}
+
+.noticia a:hover {
+	color: #01a0b1;
+}
+
+.noticia img {
+	float: left;
+	margin-bottom: 10px;
+}
+
+.noticia_footer {
+	width: 190px;
+	height: 30px;
+	margin-top: 10px;
+}
+
+a.seguir_leyendo {
+	display: block;
+	width: 80px;
+	height: 30px;
+	float: left;
+	padding: 0px 10px 0px 10px;
+	background: #959595;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 10px;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+a:hover.seguir_leyendo {
+	background: #01a0b1;
+}
+
+/* ESTILOS RECUADRO INFORMACIÓN ALUMNOS */
+
+.info_box {
+	width: 190px;
+	height: auto;
+	overflow: hidden;
+	float: right;
+	padding: 10px;
+	background: #f7f7f7;
+	font-size: 12px;
+}
+
+.info_icon {
+	width: 190px;
+	height: 90px;
+	background: url(img/icon_info-2.png) no-repeat 50px 0px;
+	margin-bottom: 10px;
+}
+
+.info_box h2 {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #000;
+	font-size: 16px;
+	text-align: center;
+}
+
+.info_box a {
+	text-decoration: none;
+	color: #666;
+}
+
+.info_box a:hover {
+	color: #01a0b1;
+}
+
+.info_box ul {
+	padding: 0px;
+}
+
+.info_box ul li.pdf_list {
+	display: block;
+	width: 165px;
+	height: 20px;
+	margin-top: 3px;
+	padding:8px 0px 3px 25px;
+	border-bottom: 1px dotted #666;
+	background: url(img/pdf-file.png) no-repeat 0px 3px;
+}
+
+/* NOTICIAS INTERIOR */
+
+.news {
+	width: 670px;
+	height: auto;
+	overflow: hidden;
+	padding: 10px 0 10px 0;
+	border-bottom: 1px solid #898989;
+}
+
+.news img {
+	float: left;
+	margin-right: 20px;
+}
+
+.news h3 {
+	font-size: 14px;
+	margin: 0px;
+}
+
+/* ESTILOS FOOTER */
+
+#footer_wrap {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: #252525;
+}
+
+#page_footer {
+	width: 900px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+
+#logo_footer {
+	width: 900px;
+	height: 25px;
+	margin: 20px 0 0 0;
+	background: url(img/logo_footer.png) no-repeat;
+}
+
+#contacto_footer {
+	width: 210px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	margin-top: 25px;
+}
+
+#contacto_footer ul.telefonos {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#contacto_footer ul.telefonos li {
+	padding-left: 20px;
+	font-size: 12px;
+	color: #898989;
+	background: url(img/icon_phone.png) no-repeat;
+}
+
+.footer_col {
+	width: 210px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	margin: 25px 0 0 20px;
+}
+
+#social_footer {
+	width: 95px;
+	height: auto;
+	overflow: hidden;
+	float: right;
+	margin: 25px 0 40px 0;
+}
+
+#facebook_footer {
+	width: 95px;
+	height: 20px;
+	margin-top: 10px;
+	padding-left: 30px;
+	background: url(img/icon_facebook_footer.png) no-repeat;
+	line-height: 20px;
+}
+
+#twitter_footer {
+	width: 95px;
+	height: 20px;
+	margin-top: 10px;
+	padding-left: 30px;
+	background: url(img/icon_twitter_footer.png) no-repeat;
+	line-height: 20px;
+}
+
+#googleplus_footer {
+	width: 95px;
+	height: 20px;
+	margin-top: 10px;
+	padding-left: 30px;
+	background: url(img/icon_googleplus_footer.png) no-repeat;
+	line-height: 20px;
+}
+
+footer p {
+	font-size: 12px;
+	color: #898989;
+	margin-top: 10px;
+}
+
+footer h1 {
+	font-size: 18px;
+	color: #898989;
+	border-bottom: 1px solid #898989;
+	margin-bottom: 5px;
+}
+
+footer h2 {
+	font-size: 14px;
+	color: #898989;
+	margin-bottom: 5px;
+}
+
+#social_footer {
+	font-size: 12px;
+}
+
+#social_footer a {
+	color: #898989;
+	text-decoration: none;
+}
+
+#social_footer a:hover {
+	color: rgb(242, 31, 12);
+}
+
+.map_footer {
+	width: 210px;
+	height: 100px;
+	overflow: hidden;
+}
+
+#map_ejercito {
+	width: 210px;
+	height: 130px;
+}
+
+#map_alameda {
+	width: 210px;
+	height: 130px;
+}
+
+.googlemaps_c {
+	width: 210px;
+	height: 20px;
+	border-bottom: 1px solid #898989;
+	background: url(img/logo_google_maps.png) no-repeat 150px;
+}
+
+a.googlemaps {
+	display: block;
+	width: 210px;
+	height: 20px;
+	color: #707070;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	padding: 5px 0 4px 25px;
+	background: url(img/icon_gmaps_18x18.png) no-repeat 0px 5px;
+	border-bottom: 1px dotted #666;
+}
+
+a:hover.googlemaps {
+	color: rgb(191, 15, 48);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
